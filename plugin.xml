@@ -270,18 +270,12 @@
     </platform>
 
     <!-- ios -->
-    <!-- <platform name="ios">
-        <js-module src="www/plugin.js" name="plugin">
-            <runs/>
-            <clobbers target="GenieSDK" />
-        </js-module>
+    <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="MyCordovaPlugin">
-                <param name="ios-package" value="MyCordovaPlugin" onload="true" />
+            <feature name="splashscreen">
+                <param name="ios-package" value="SplashScreen" onload="true" />
             </feature>
         </config-file>
-
-        <header-file src="src/ios/MyCordovaPlugin.h" />
-        <source-file src="src/ios/MyCordovaPlugin.m" />
-    </platform> -->
+        <header-file src="src/ios/SplashScreen.swift" />
+    </platform>
 </plugin>
